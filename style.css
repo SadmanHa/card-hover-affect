@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #A3CB38;
+    font-family: 'quicksand';
+    overflow: hidden;
+}
+.card-container {
+    padding: 66px 22px 0;
+}
+.w33 {
+    width: 33.33%;
+    float: left;
+    padding: 20px;
+}
+.card {
+    background: lemonchiffon;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 0px 27px 5px rgb(0 0 0 / 50%);
+    /* height: 499px; */
+    height: 212px;
+    margin: 0px 20px;
+    top: 49px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.card .card-img {
+    width: 61%;
+    position: relative;
+    left: 20%;
+    top: -61px;
+    /* transform: translate(-50%,-50%); */
+    box-shadow: 0px 0px 17px 6px rgba(0, 0, 0, 0.411);
+    height: 220px;
+    border-radius: 50%;
+}
+.card .card-img img{
+
+    width: 100%;
+    border-radius: 50%;
+}
+.card .card-desc {
+    text-align: center;
+    padding: 24px;
+    position: relative;
+    top: -66px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.card .card-desc h2 {
+    font-size: 29px;
+    margin-bottom: 14px;
+
+}
+.card .card-desc p {
+    font-weight: 600;
+    font-size: 18px;
+}
+.card .card-desc a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: tomato;
+    padding: 13px;
+    border-radius: 4px;
+    margin-top: 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.card:hover {
+    top: 0px;
+    height: 499px;
+}
+.card:hover .card-desc {
+    visibility: visible;
+    transition-delay: 0.5s;
+    opacity: 1;
+}
